@@ -13,3 +13,36 @@ paper demonstrates how we used adversarial training to enhance the robustness of
 idea is we are going to use two adversarial attacks on the images in our dataset to cause deliberately
 incorrect predictions or make the model unable to classify them correctly and then we will implement
 methods to robust the neural network.
+
+
+# Intoduction
+
+Adversarial samples are the current threat to the ex-
+isting DL Algorithms and that is because of the per-
+turbations they make can cause the model to make
+
+a wrong prediction with a high confidence. Thus,
+this phenomenon is considered to be a significant
+obstacle to the mass deployment of DL models in
+production.
+
+# Dataset
+The dataset that we choose to work with for this
+
+study is the GTSRB (German Traffic sign Recogni-
+tion Benchmark). It has about 50000 images classi-
+fied in 43 classes.
+
+Plot of the GTSRB dataset
+
+# Method and Experiment
+Convolutional neural network
+
+To classify our images, we are going to employ con-
+volution neural network, also know as CNN or Con-
+vNet via keras and tensorflow libraries, with the fol-
+lowing architecture:
+
+Conv2D + MaxPool2D + BatchNormalization)
++ activation=’relu’ + activation=’softmax’, with a
+loss function “ loss=”categoricalcrossentropy”.
